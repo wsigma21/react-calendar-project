@@ -13,5 +13,5 @@ export type DateList = {
 export type NewSchedule = {
   title: string;
   date: string;
-  desription: string;
+  description: string;
 }

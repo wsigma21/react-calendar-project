@@ -3,12 +3,14 @@ import { addMonths } from "date-fns"
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import { PrimaryBtn } from "../atoms/PrimaryBtn";
 import { CreateScheduleModal } from "./CreateScheduleModal";
+import { Schedule } from "../../types/calendar";
 
 type PropsType = {
   setCurrentDate: Dispatch<SetStateAction<Date>>
+  addSchedule: (schedule: Schedule) => void;
 }
 
-export const CalendarNav = ({ setCurrentDate }: PropsType) => {
+export const CalendarNav = ({ setCurrentDate, addSchedule }: PropsType) => {
   const [isOpen, setIsOpen] = useState(false)
   const closeModal = () => setIsOpen(false)
 
@@ -38,6 +40,7 @@ export const CalendarNav = ({ setCurrentDate }: PropsType) => {
       <CreateScheduleModal
         isOpen={isOpen}
         closeModal={closeModal}
+        addSchedule={addSchedule}
       />
     </div>
   )
