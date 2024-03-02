@@ -12,7 +12,8 @@ export const LoginLayout = () => {
     setLoginUser({ id: 0, name: "" })
     navigate("/login")
   }
-  if (loginUser.id === 0 ) return <Navigate to="/login" />;
+  // 開発中は一旦コメントアウト
+  // if (loginUser.id === 0 ) return <Navigate to="/login" />;
   return (
     <div className="realative">
       <header className="bg-white fixed top-0 left-0 right-0 leading-[50px]">
