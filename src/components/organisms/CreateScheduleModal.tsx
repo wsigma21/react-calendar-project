@@ -60,11 +60,11 @@ export const CreateScheduleModal = ({
             />
           </div>
           <div className="w-[100%] flex items-center">
-            <label htmlFor="desription-form" className="w-[30%] text-lime-800">内容</label>
+            <label htmlFor="description-form" className="w-[30%] text-lime-800">内容</label>
             <Textarea
-              id="desription-form"
-              name="desription"
-              value={newSchedule.desription}
+              id="description-form"
+              name="description"
+              value={newSchedule.description}
               onChange={changeNewSchedule}
             />
           </div>
