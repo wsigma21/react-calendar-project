@@ -660,6 +660,14 @@ video {
   width: 94%;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .table-fixed {
   table-layout: fixed;
 }
@@ -702,6 +710,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded-lg {
