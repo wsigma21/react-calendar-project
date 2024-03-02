@@ -56,6 +56,7 @@ export const CreateScheduleModal = ({
     })
     closeModal()
   }
+  Modal.setAppElement('#root');
   return (
     <Modal isOpen={isOpen} style={customStyles} onRequestClose={closeModal}>
       <div>
